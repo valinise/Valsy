@@ -1,9 +1,9 @@
-//META{"name":"Valsy","description":"Basic, slick, low brightness with a changeable background","author":"Valinise","version":"1.0"}*//{}
+//META{"name":"Valsy","description":"Basic transparent background.","author":"Satoru","version":"1.1","website":"http://discord.gg/fjvwb95"}*//{}
 
 @import url();  /* Import your link here. This is the link to your MyTheme.css file on your github page. */
 
 :root {
-    --background: url(https://i.imgur.com/FoEJTF0.jpg);  /*Wallpaper.*/
+    --background: url(https://i.imgur.com/est5boa.png);  /*Wallpaper.*/
     --light: rgba(0, 0, 0, 0.53); /* Overall brightness. 1= rgb(0, 0, 0), 0 = transparent */
 	--trans: rgba(0, 0, 0, 0);	
 	--font: sans-serif;	
@@ -45,7 +45,7 @@ Everything below goes in to a new file, MyTheme.css for import */
 .theme-dark .iconBadge-2dji3k:hover {border-color: #eee}
 
 .wordmark-2iDDfm svg > path {fill:#fff}
-.winButtonClose-1HsbF- > svg > polygon  {fill:#fff}
+.winButtonClose-1HsbF- > svg > polygon  {fill:#ffffff}
 .winButtonMinMax-PBQ2gm > svg > rect {stroke:#fff}
 .winButton-iRh8-Z {opacity: 1}
 .theme-dark .iconForeground-3y9f0B, .theme-dark .title-1aVOXw {color: rgba(255, 255, 255, 0.19)}
@@ -55,7 +55,7 @@ Everything below goes in to a new file, MyTheme.css for import */
 input{background: rgb(255, 255, 255)}
 body,span:not(.spinner-item){-webkit-font-smoothing:optimizeLegibility !important;-webkit-backface-visibility:hidden;}
 body,h1,h2,h3,h4,h5,h6 {color: #fff);font-family:var(--font);text-rendering: optimizeLegibility !important; font-smoothing: antialiased !important}
-.theme-dark ::selection {background: #fff;color:rgba(255, 0, 0, 0.8)}
+.theme-dark ::selection {background: rgba(251, 251, 251, 0.11);color:rgba(255, 255, 255, 0.8)} /*this is when you highlight things*/
 .theme-dark ::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.8) !important}
 
 /* Chat Area */
@@ -81,12 +81,12 @@ body,h1,h2,h3,h4,h5,h6 {color: #fff);font-family:var(--font);text-rendering: opt
 
 /* @'s and stuff */
 
-.isMentioned-N-h9aa {background: rgba(162, 162, 162, 0.08);}
+.theme-dark .isMentioned-N-h9aa {background: rgba(146, 146, 146, 0.1);}
 .isMentionedCozy-3isp7y:after {background: rgba(162, 162, 162, 0.08);border-left: 4px solid #7289da;}
 
 /*voice and text channels*/
 
-.iconCollapsed-3hFp_8, .iconDefault-3Gr8d2, .nameCollapsed-34uFWo, .nameDefault-2DI02H, .nameDefaultText-24KCy5, .nameDefaultVoice-3WUH7s, .nameLockedText-3pqQcL, .nameLockedVoice-26MhB1 {color: rgba(193, 186, 186, 0.42);}
+.iconCollapsed-3hFp_8, .iconDefault-3Gr8d2, .nameCollapsed-34uFWo, .nameDefault-2DI02H, .nameDefaultText-24KCy5, .nameDefaultVoice-3WUH7s, .nameLockedText-3pqQcL, .nameLockedVoice-26MhB1 {color: rgba(193, 186, 186, 0.38);}
 .contentSelectedText-3wUhMi, .contentSelectedVoice-1WDIBM {background-color: rgba(79, 84, 92, 0.22);}
 .wrapper-2NJDcI {background-color: rgba(132, 132, 132, 0.12);border-radius: 2px;color: rgb(114, 118, 125);display: inline-block;font-family: SourceCodePro,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size: 12px;height: 16px;line-height: 16px;padding: 0 4px;}
 
@@ -105,3 +105,7 @@ body,h1,h2,h3,h4,h5,h6 {color: #fff);font-family:var(--font);text-rendering: opt
 .search-bar-light {-webkit-box-shadow: none;background-color: rgba(255, 255, 255, 0);box-shadow: none;height: auto;padding: 0;}
 .emojiPicker-3m1S-j .dimmer-3iH-5D.visible-3k45bQ {background-color: hsla(0, 0%, 100%, 0);pointer-events: auto;}
 .diversitySelector-tmmMv0 .popout-2nUePc {-ms-flex-direction: column;-webkit-box-direction: normal;-webkit-box-orient: vertical;-webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.1);background: rgba(103, 103, 103, 0.85);border: 1px solid rgba(218, 221, 223, 0);border-radius: 3px;box-shadow: 0 2px 6px 0 rgba(0,0,0,.1);display: -webkit-box;display: -ms-flexbox;display: flex;flex-direction: column;margin-left: -1px;margin-top: -1px;position: absolute;}
+
+/*random*/
+.homeIcon-1FoKUJ::hover{}
+.guildSeparator-1X4GQ1{}
