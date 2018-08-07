@@ -1,0 +1,107 @@
+//META{"name":"Valsy","description":"Basic, slick, low brightness with a changeable background","author":"Valinise","version":"1.0"}*//{}
+
+@import url();  /* Import your link here. This is the link to your MyTheme.css file on your github page. */
+
+:root {
+    --background: url(https://i.imgur.com/FoEJTF0.jpg);  /*Wallpaper.*/
+    --light: rgba(0, 0, 0, 0.53); /* Overall brightness. 1= rgb(0, 0, 0), 0 = transparent */
+	--trans: rgba(0, 0, 0, 0);	
+	--font: sans-serif;	
+	--font-size: 15px ;
+	--text:  #ffffff;
+}
+	
+/*  Your META and root should be in your MyTheme.theme.css To give to other people. ^^^^
+
+
+Everything below goes in to a new file, MyTheme.css for import */
+
+
+/* Scrollbars */
+::-webkit-scrollbar-thumb {border-color: rgba(0, 0, 0, 0) !important; background: rgba(80, 80, 80, 0.26) !important;} 
+::-webkit-scrollbar, ::-webkit-scrollbar-track-piece {border-color: transparent !important; background: rgba(0, 0, 0, 0) !important;} 
+::-webkit-scrollbar-corner {display: none !important;}
+
+
+/* Main background/TitleBar etc */
+.appMount-3VJmYg {background: var(--background) center/cover no-repeat} /* Background */
+.theme-dark .container-2lgZY8,.theme-dark .ui-standard-sidebar-view,.titleBar-AC4pGV::after {background-color: var(--light)} /* Brightness */
+.titleBar-AC4pGV::after {content:""; position:absolute; z-index:-1; top:0; left:0; right:0; width:100%; height:22px} /* Titlebar layer */
+/* Transparency */
+.theme-dark .chat-3bRxxu,.theme-dark .guildsWrapper-5TJh6A,.theme-dark .layer-3QrUeG{background-color: transparent;}
+.theme-dark .chat-3bRxxu>.content-yTz4x3, .theme-dark .chat-3bRxxu form, .flex-horizontal>.flex-spacer, 
+.theme-dark .uploadModal-2ifh8j .footer-3mqk7D, .theme-dark  .uploadModal-2ifh8j, .theme-dark #friends, 
+.theme-dark .activityFeed-28jde9, .theme-dark .footer-2yfCgX, .theme-dark .headerBar-UHpsPw, 
+.theme-dark .channels-Ie2l6A, .theme-dark .container-PNkimc, .theme-dark .ui-standard-sidebar-view .sidebar-region, 
+.theme-dark .ui-standard-sidebar-view .content-region, .theme-dark .layers-3iHuyZ, .theme-dark .guildsWrapper-5TJh6A .guilds-1q_RqH, 
+.theme-dark .chat-3bRxxu .content-yTz4x3, .theme-dark .members-1998pB, .theme-dark .title-3qD0b-, .theme-dark .scroller-2v3d_F, 
+.theme-dark .header-2o-2hj, .theme-dark .container-2Thooq,.theme-dark .messagesWrapper-3lZDfY  {background: var(--trans) !important;background-color:var(--trans) !important}
+
+
+.markup-2BOw-j:not(code) {font-size: var(--font-size)!important;}  /* Changes font size of user text, not including code. */
+.theme-dark .containerCozy-jafyvG .comment .markup-2BOw-j {color: var(--text)} /* Text colour */
+
+.theme-dark .iconBadge-2dji3k {border-color: rgb(255, 255, 255)}
+.theme-dark .iconBadge-2dji3k:hover {border-color: #eee}
+
+.wordmark-2iDDfm svg > path {fill:#fff}
+.winButtonClose-1HsbF- > svg > polygon  {fill:#fff}
+.winButtonMinMax-PBQ2gm > svg > rect {stroke:#fff}
+.winButton-iRh8-Z {opacity: 1}
+.theme-dark .iconForeground-3y9f0B, .theme-dark .title-1aVOXw {color: rgba(255, 255, 255, 0.19)}
+.theme-dark .title-3qD0b- {box-shadow:0 0 0 rgba(255, 255, 255, 0.36)}
+.theme-dark .backdrop-1wrmKB {opacity: .3 !important}
+
+input{background: rgb(255, 255, 255)}
+body,span:not(.spinner-item){-webkit-font-smoothing:optimizeLegibility !important;-webkit-backface-visibility:hidden;}
+body,h1,h2,h3,h4,h5,h6 {color: #fff);font-family:var(--font);text-rendering: optimizeLegibility !important; font-smoothing: antialiased !important}
+.theme-dark ::selection {background: #fff;color:rgba(255, 0, 0, 0.8)}
+.theme-dark ::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.8) !important}
+
+/* Chat Area */
+.username-_4ZSMR, .usernameWrapper-1S-G5O .username-_4ZSMR {font-weight: 600;background:rgba(0, 0, 0, 0);border-radius:10%} /* User Name */
+.theme-dark .timestampCozy-2hLAPV {color: rgba(255, 255, 255, 0.14)}
+.theme-dark .inner-zqa7da {background-color: hsla(0, 0%, 0%, 0.19);box-shadow: 0 0 3px 1px hsla(284, 100%, 50%, 0) } /* Chat box */
+#app-mount .typing-2GQL18 {background: transparent}
+/* Guilds */
+.theme-dark .guildSeparator-1X4GQ1:after{display:none}
+.theme-dark .friendsOnline-_wi_fM, .theme-light .friendsOnline-_wi_fM {color: rgb(193, 193, 193);}
+
+/* Channels */
+.private-channels .channel .channel-name {opacity:1}
+.iconCollapsed-3hFp_8, .iconDefault-3Gr8d2, .nameCollapsed-34uFWo, .nameDefault-2DI02H,
+.nameDefaultText-24KCy5, .nameDefaultVoice-3WUH7s, .nameLockedText-3pqQcL, .nameLockedVoice-26MhB1 {color: rgba(175, 175, 175, 0.42);} 
+
+/* Notifications */
+
+.theme-dark .divider-3gKybi.dividerRed-MKoLlr>span {color: #7289da}
+.theme-dark .divider-3gKybi.dividerRed-MKoLlr>div {background: #7289da;opacity: .4;}
+.theme-dark .divider-3gKybi:not(.red-1YQ4s7) span {color: #7289da;}
+.theme-dark .divider-3gKybi:not(.red-1YQ4s7) div {background: #7289da;opacity: .4;}
+
+/* @'s and stuff */
+
+.isMentioned-N-h9aa {background: rgba(162, 162, 162, 0.08);}
+.isMentionedCozy-3isp7y:after {background: rgba(162, 162, 162, 0.08);border-left: 4px solid #7289da;}
+
+/*voice and text channels*/
+
+.iconCollapsed-3hFp_8, .iconDefault-3Gr8d2, .nameCollapsed-34uFWo, .nameDefault-2DI02H, .nameDefaultText-24KCy5, .nameDefaultVoice-3WUH7s, .nameLockedText-3pqQcL, .nameLockedVoice-26MhB1 {color: rgba(193, 186, 186, 0.42);}
+.contentSelectedText-3wUhMi, .contentSelectedVoice-1WDIBM {background-color: rgba(79, 84, 92, 0.22);}
+.wrapper-2NJDcI {background-color: rgba(132, 132, 132, 0.12);border-radius: 2px;color: rgb(114, 118, 125);display: inline-block;font-family: SourceCodePro,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size: 12px;height: 16px;line-height: 16px;padding: 0 4px;}
+
+/*servers and shit*/
+
+.theme-dark .friendsOnline-_wi_fM, .theme-light .friendsOnline-_wi_fM {color: #656565;}
+.theme-dark .guild-1EfMGQ.unread-qLkInr:before {background: rgba(255, 255, 255, 0.25);}
+
+/*online*/
+
+.theme-dark .status-2s6iDp {border-color: rgba(255, 255, 255, 0.17);}
+
+/*emojis*/
+.emojiPicker-3m1S-j {-ms-flex-direction: column;-webkit-box-direction: normal;-webkit-box-orient: vertical;-webkit-box-shadow: 0 0 6px 0 rgba(0,0,0,.1);background-color: rgba(255, 255, 255, 0);border: 1px solid hsla(0, 0%, 75%, 0);border-radius: 5px;box-shadow: 0 0 6px 0 rgba(0,0,0,.1);display: -webkit-box;display: -ms-flexbox;display: flex;flex-direction: column;overflow: hidden;}
+.emojiPicker-3m1S-j .stickyHeader-1SS0JU {background: hsla(0, 0%, 100%, 0);left: 8px;position: absolute;top: 0;width: 93%;z-index: 1;}
+.search-bar-light {-webkit-box-shadow: none;background-color: rgba(255, 255, 255, 0);box-shadow: none;height: auto;padding: 0;}
+.emojiPicker-3m1S-j .dimmer-3iH-5D.visible-3k45bQ {background-color: hsla(0, 0%, 100%, 0);pointer-events: auto;}
+.diversitySelector-tmmMv0 .popout-2nUePc {-ms-flex-direction: column;-webkit-box-direction: normal;-webkit-box-orient: vertical;-webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.1);background: rgba(103, 103, 103, 0.85);border: 1px solid rgba(218, 221, 223, 0);border-radius: 3px;box-shadow: 0 2px 6px 0 rgba(0,0,0,.1);display: -webkit-box;display: -ms-flexbox;display: flex;flex-direction: column;margin-left: -1px;margin-top: -1px;position: absolute;}
